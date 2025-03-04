@@ -9,9 +9,8 @@ package griffith;
 
         // Converts Dollar to Euro
         public double dollarToEuro(double dollar) {
-            return 0.0;
+            return dollar * 0.91; // Assume 1 USD = 0.91 Euro
         }
-
         // Converts a String to an Integer
         public int stringToInteger(String val) {
             return 0;
