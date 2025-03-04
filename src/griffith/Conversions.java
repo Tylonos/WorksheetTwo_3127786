@@ -18,7 +18,7 @@ package griffith;
 
         // Converts an Integer to a String
         public String integerToString(int val) {
-            return "";
+            return String.valueOf(val);
         }
 
         // Switches case (uppercase to lowercase and vice versa)
