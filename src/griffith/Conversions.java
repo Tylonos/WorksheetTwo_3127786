@@ -13,7 +13,7 @@ package griffith;
         }
         // Converts a String to an Integer
         public int stringToInteger(String val) {
-            return 0;
+            return Integer.parseInt(val);
         }
 
         // Converts an Integer to a String
