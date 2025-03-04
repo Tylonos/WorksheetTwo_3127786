@@ -11,6 +11,7 @@ package griffith;
         public double dollarToEuro(double dollar) {
             return dollar * 0.91; // Assume 1 USD = 0.91 Euro
         }
+
         // Converts a String to an Integer
         public int stringToInteger(String val) {
             return Integer.parseInt(val);
@@ -22,7 +23,17 @@ package griffith;
         }
 
         // Switches case (uppercase to lowercase and vice versa)
-        public String switchCase() {
-            return "";
+        public String switchCase(String input) {
+            StringBuilder result = new StringBuilder();
+            for (char ch : input.toCharArray()) {
+                if (Character.isUpperCase(ch)) {
+                    result.append(Character.toLowerCase(ch));
+                } else if (Character.isLowerCase(ch)) {
+                    result.append(Character.toUpperCase(ch));
+                } else {
+                    result.append(ch);
+                }
+            }
+            return result.toString();
         }
     }
