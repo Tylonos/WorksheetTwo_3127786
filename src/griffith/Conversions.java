@@ -4,7 +4,7 @@ package griffith;
 
         // Converts Euro to Dollar
         public double euroToDollar(double euro) {
-            return 0.0;
+            return euro * 1.1; // Assume 1 Euro = 1.1 USD
         }
 
         // Converts Dollar to Euro
